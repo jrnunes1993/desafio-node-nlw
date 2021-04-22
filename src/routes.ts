@@ -9,8 +9,4 @@ const settingsControllers = new SettingsControllers();
 
 routes.post('/settings', settingsControllers.create)
 
-routes.get("/test", (request, response) => {
-  return response.json({"test": true})
-})
-
 export { routes };
