@@ -14,5 +14,7 @@ routes.post('/settings', settingsControllers.create);
 routes.post('/users', usersControllers.create);
 routes.post('/messages', messagesControllers.create);
 routes.get("/messages/:id", messagesControllers.showByUser);
+routes.get("/settings/:username", settingsControllers.findByUserName);
+routes.put("/settings/:username", settingsControllers.update);
 
 export { routes };
